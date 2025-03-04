@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{f21b3cab-b2be-4718-9fe1-7ef7309adf7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{6b371eba-2724-4ae6-8fe6-f7e7c6e59876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inference">
+      <UniqueIdentifier>{2efba59c-e591-4348-9173-bab8be5550b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Channel">
+      <UniqueIdentifier>{3d5ed313-0d41-428d-9d16-e2d788f2d764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{862ce81b-a424-4c1c-a0b6-44f7b482b531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{852ab9cd-6b3d-4213-9e3f-6555357627ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IoS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Inifile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\VurixDevice.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json-forwards.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\DeviceStream.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\Inference_defines.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\InferenceBase.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\InferenceStream.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\StreamDataQ.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\streampool.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel\GroupChannelInfo.h">
+      <Filter>Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel\GroupChannelManager.h">
+      <Filter>Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\lock.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TCPServer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TCPSession.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TCPSessionPool.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TCPSesssionParser.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\thread.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AutoIncreasingBuffer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\AlgCamOptionInfoDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\AlgOptionInfoDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\ChannelInfoDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\DataBaseManager.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\DatabaseProcess.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\DBPostgre.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\ProcessInfoDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\QueryDB.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\RoiInfoDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\RoiPointDataSet.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Base64.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\KISA_SEED_CBC.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Inference\EventManager.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TCPClient.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IoS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Inifile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\VurixDevice.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="json\jsoncpp.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\DeviceStream.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\InferenceBase.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\InferenceStream.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\StreamDataQ.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\streampool.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Channel\GroupChannelInfo.cpp">
+      <Filter>Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="Channel\GroupChannelManager.cpp">
+      <Filter>Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\lock.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TCPServer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TCPSession.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TCPSessionPool.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TCPSesssionParser.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\thread.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AutoIncreasingBuffer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\DataBaseManager.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\DatabaseProcess.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\DBPostgre.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\QueryDB.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Base64.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\KISA_SEED_CBC.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Inference\EventManager.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TCPClient.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IoS.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

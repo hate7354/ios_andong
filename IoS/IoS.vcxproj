@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e7849b20-0855-4eac-a786-6cf36bc6c571}</ProjectGuid>
+    <RootNamespace>IoS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\IoS;$(SolutionDir)\IoS\Include\ffmpeg;$(SolutionDir)\IoS\Include\rtsp;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)\IoS\Include\Postgre\include;$(SolutionDir)\IoS\Include\cv452\opencv\build\include</IncludePath>
+    <LibraryPath>$(SolutionDir)\IoS\lib\ffmpeg;$(SolutionDir)\IoS\lib\rtsp;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)\IoS\lib\Postgre\lib;$(SolutionDir)\IoS\lib\cv452\opencv\build\x64\vc16\lib;$(SolutionDir)\IoS\lib\yolo</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\IoS\;$(SolutionDir)\IoS\Include\ffmpeg;$(SolutionDir)\IoS\Include\rtsp;$(SolutionDir)\IoS\Include\cv452\opencv\build\include;$(SolutionDir)\IoS\Include\Postgre\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\IoS\lib\yolo;$(SolutionDir)\IoS\lib\ffmpeg;$(SolutionDir)\IoS\lib\rtsp;$(SolutionDir)\IoS\lib\cv452\opencv\build\x64\vc16\lib;$(SolutionDir)\IoS\lib\Postgre\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPENCV;GPU;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>include;Device;Inference;Channel;Network;DB</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>RTSPClientLibd.lib;opencv_world452d.lib;libcurl.lib;libpq.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\curl</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;OPENCV;GPU;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;NoDnn;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>include;Device;Inference;Channel;Network;DB</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>RTSPClientLib.lib;opencv_world452.lib;libcurl.lib;libpq.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\curl</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Channel\GroupChannelInfo.h" />
+    <ClInclude Include="Channel\GroupChannelManager.h" />
+    <ClInclude Include="DB\AlgCamOptionInfoDataSet.h" />
+    <ClInclude Include="DB\AlgOptionInfoDataSet.h" />
+    <ClInclude Include="DB\ChannelInfoDataSet.h" />
+    <ClInclude Include="DB\DataBaseManager.h" />
+    <ClInclude Include="DB\DatabaseProcess.h" />
+    <ClInclude Include="DB\DBPostgre.h" />
+    <ClInclude Include="DB\ProcessInfoDataSet.h" />
+    <ClInclude Include="DB\QueryDB.h" />
+    <ClInclude Include="DB\RoiInfoDataSet.h" />
+    <ClInclude Include="DB\RoiPointDataSet.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Device\VurixDevice.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Inference\DeviceStream.h" />
+    <ClInclude Include="Inference\EventManager.h" />
+    <ClInclude Include="Inference\InferenceBase.h" />
+    <ClInclude Include="Inference\InferenceStream.h" />
+    <ClInclude Include="Inference\Inference_defines.h" />
+    <ClInclude Include="Inference\StreamDataQ.h" />
+    <ClInclude Include="Inference\streampool.h" />
+    <ClInclude Include="Inifile.h" />
+    <ClInclude Include="json\json-forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="Network\AutoIncreasingBuffer.h" />
+    <ClInclude Include="Network\Base64.h" />
+    <ClInclude Include="Network\KISA_SEED_CBC.h" />
+    <ClInclude Include="Network\lock.h" />
+    <ClInclude Include="Network\TCPClient.h" />
+    <ClInclude Include="Network\TCPServer.h" />
+    <ClInclude Include="Network\TCPSession.h" />
+    <ClInclude Include="Network\TCPSessionPool.h" />
+    <ClInclude Include="Network\TCPSesssionParser.h" />
+    <ClInclude Include="Network\thread.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="IoS.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Channel\GroupChannelInfo.cpp" />
+    <ClCompile Include="Channel\GroupChannelManager.cpp" />
+    <ClCompile Include="DB\DataBaseManager.cpp" />
+    <ClCompile Include="DB\DatabaseProcess.cpp" />
+    <ClCompile Include="DB\DBPostgre.cpp" />
+    <ClCompile Include="DB\QueryDB.cpp" />
+    <ClCompile Include="Device\VurixDevice.cpp" />
+    <ClCompile Include="Inference\DeviceStream.cpp" />
+    <ClCompile Include="Inference\EventManager.cpp" />
+    <ClCompile Include="Inference\InferenceBase.cpp" />
+    <ClCompile Include="Inference\InferenceStream.cpp" />
+    <ClCompile Include="Inference\StreamDataQ.cpp" />
+    <ClCompile Include="Inference\streampool.cpp" />
+    <ClCompile Include="Inifile.cpp" />
+    <ClCompile Include="json\jsoncpp.cpp" />
+    <ClCompile Include="Network\AutoIncreasingBuffer.cpp" />
+    <ClCompile Include="Network\Base64.cpp" />
+    <ClCompile Include="Network\KISA_SEED_CBC.cpp" />
+    <ClCompile Include="Network\lock.cpp" />
+    <ClCompile Include="Network\TCPClient.cpp" />
+    <ClCompile Include="Network\TCPServer.cpp" />
+    <ClCompile Include="Network\TCPSession.cpp" />
+    <ClCompile Include="Network\TCPSessionPool.cpp" />
+    <ClCompile Include="Network\TCPSesssionParser.cpp" />
+    <ClCompile Include="Network\thread.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="IoS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IoS.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
